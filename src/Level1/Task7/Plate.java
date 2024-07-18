@@ -11,12 +11,20 @@ public class Plate {
         return food;
     }
 
-    public boolean decreaseFood(int amount) {
-        if (amount < 0 || amount > food) {
-            return false;
+    public int decreaseFood(int amount) {
+        if (food == 0) {
+            return -1;
+        }
+        if (amount < 0) {
+            return -2;
+        }
+        if (amount > food) {
+            int t = food;
+            food = 0;
+            return t;
         }
         food -= amount;
-        return true;
+        return 0;
     }
 
     public void info() {

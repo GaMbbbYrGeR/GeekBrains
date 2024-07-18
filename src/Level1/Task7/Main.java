@@ -19,6 +19,13 @@ public class Main {
         }
         plate.info();
 
+        plate.addFood(50);
+        cats[3].eat(plate);
+        cats[4].eat(plate);
+
+        System.out.println(cats[3]);
+        System.out.println(cats[4]);
+        plate.info();
     }
 
     public static void printValue(Integer a) {
