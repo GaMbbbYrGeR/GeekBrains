@@ -97,13 +97,6 @@ public class BattleMap extends JPanel {
                 }
             }
         }
-
-//        ((Graphics2D)g).setStroke(new BasicStroke(5));
-//        g.setColor(Color.RED);
-//        g.drawString("qweqweqwe", 200, 200);
-
-//        g.drawLine(100, 100, 400, 400);
-//        g.drawOval(100, 100, 300, 300);
     }
 
     private void drawX(Graphics g, int cellX, int cellY) {
